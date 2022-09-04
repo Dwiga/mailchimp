@@ -1,0 +1,99 @@
+<style>
+  .blog-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .blog-column {
+    flex: 40%;
+    max-width: 100%;
+    padding: 0 4px;
+  }
+
+  .blog-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  .blog-link {
+    color: #dd2977;
+  }
+
+  .blog {
+    border: 8px solid;
+    height: 39.5%;
+    max-width: 270px;
+    display: flex;
+  }
+
+  .apply-shellac {
+    display: flex;
+  }
+
+  .remove-shellac {
+    display: flex;
+  }
+
+  .apply-polish {
+    display: flex;
+    height: 210px;
+  }
+
+  .blog-text {
+    color: #dd2977;
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media only screen and (min-width: 50px) and (max-width: 664px) {
+    .blog-column {
+      flex: 100% !important;
+      width: 100% !important;
+    }
+
+    .apply-shellac {
+      width: 100% !important;
+    }
+
+    .remove-shellac {
+      width: 100% !important;
+    }
+
+    .apply-polish {
+      width: 100% !important;
+    }
+
+    .blog {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<div class="blog-row">
+  <div class="blog-column">
+    <a class="blog-link" href="https://www.esthersnc.com/nail-beauty/gel-nail-polish-home-tips-how">
+      <img class="blog-images apply-polish"
+        src="https://cdn11.bigcommerce.com/s-ynkzwr9/product_images/uploaded_images/manicure-nail-polish.jpg" />
+      <p class="blog-text">How to apply Gel polish</p>
+    </a>
+    <a class="blog-link" href="https://www.esthersnc.com/nail-beauty/how-apply-cnd-shellac-nail-polish">
+      <img class="blog-images apply-shellac"
+        src="http://blog.esthersnc.com/wp-content/uploads/2011/09/how-to-apply-shellac-nail-polish-2-color.jpg" />
+      <p class="blog-text">How to apply Shellac</p>
+    </a>
+  </div>
+  <div class="blog-column">
+    <a class="blog-link" href="https://www.esthersnc.com/how-to-remove-shellac-nails-at-home/">
+      <img class="blog-images remove-shellac"
+        src="https://www.esthersnc.com/product_images/uploaded_images/how-to-remove-shellac-nail-polish-acetone.jpg" />
+      <p class="blog-text">How to remove shellac</p>
+    </a>
+    <a class="blog-link" href="https://www.esthersnc.com/blog/">
+      <img class="blog-images blog"
+        src="https://cdn11.bigcommerce.com/s-ynkzwr9/images/stencil/250x100/enc-logo-500-200_1650335124__02770.original.png" />
+      <p class="blog-text">Blog</p>
+    </a>
+  </div>
+</div>
